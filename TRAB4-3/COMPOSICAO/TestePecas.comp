@@ -1,0 +1,27 @@
+# Teste do módulo: generico
+
+[Diretorios]
+
+Nome        =  TestePecas
+PathDefault =  .
+err         =  .
+obj         =  .
+c           =  ./FONTES
+h           =  ./FONTES
+def         =  .
+tab         =  .
+inc         =  .
+
+[Modulos]
+TESTPEC
+PECAS
+
+[BuildInicio]
+/OUT:TRAB4-3.exe
+/INCREMENTAL:NO
+/MACHINE:IX86
+
+[BuildFim]
+ArcaboucoTeste.lib
+
+[Fim]
