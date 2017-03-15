@@ -1,0 +1,31 @@
+
+!!! Inicio dos testes
+!!!      Construto sob teste: TRAB4-3
+!!!      Script de teste:     TestePecas.script
+
+!!!    0  Linha:     1  // Script:    TestePecas.script 
+!!!    0  Linha:     2  // Autor:     Daniel Cunha Rios 
+!!!    0  Linha:     3  // Data:      08/out/2016 
+!!!    0  Linha:     4  // PropÃ³sito: Testar o mÃ³dulo peÃ§as 
+    6  == Inicializar valores
+   34  == Criar peca corretamente
+   38  ==Criar peca com erro
+   42  ==Destruir peca com erro
+   45  ==Obter informaÃ§Ã£o sem erro
+   49  ==Obter informaÃ§Ã£o com erro
+   52  ==Atualiza peÃ§a sem erro
+   56  ==Atualiza peÃ§a com erro
+   63  ==Destruir peca corretamente
+!!!    0  Linha:    67  // 
+!!!    0  Linha:    68  //        FIM DO SCRIPT DE TESTE 
+!!!    0  Linha:    69  // 
+
+!!! Número de linhas lidas:          70
+!!! Número de casos de teste:         9
+!!! Número comandos corretos:        39
+!!! Número de falhas encontradas:     0
+
+!!! Não foram encontrados problemas
+
+
+!!! Numero de espacos ainda alocados: 0

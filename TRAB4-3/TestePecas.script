@@ -1,0 +1,70 @@
+// Script:    TestePecas.script         
+// Autor:     Daniel Cunha Rios          
+// Data:      08/out/2016                
+// Propósito: Testar o módulo peças      
+
+== Inicializar valores
+=declararparm   indp0  int 0
+=declararparm   indp1  int 15
+=declararparm   indp3  int 3
+=declararparm   indp2  int 2
+
+=declararparm   corp0  int 0
+=declararparm   corp1  int 3
+=declararparm   corp2  int 5
+=declararparm   corp3  int -1
+
+=declararparm   final0 int -1
+=declararparm   final1 int 0
+=declararparm   final2 int 1
+=declararparm   final3 int 2
+
+=declararparm   status0 char 'D'
+=declararparm   status1 char 'F'
+=declararparm   status2 char 'J'
+
+=declararparm   OK              int  0
+=declararparm   FaltouMemoria   int  1
+=declararparm   StatusErrado    int  2
+=declararparm   FinalErrado     int  3
+=declararparm   CorInvalida     int  4
+=declararparm   JaExiste        int  5
+=declararparm   NaoExiste       int  6
+
+== Criar peca corretamente
+=criarpeca      indp0  corp0 OK
+=criarpeca      indp1  corp1 OK
+
+==Criar peca com erro
+=criarpeca      indp3  corp2 CorInvalida
+=criarpeca      indp1  corp1 JaExiste
+
+==Destruir peca com erro
+=destruirpeca   indp2  NaoExiste
+
+==Obter informação sem erro
+=obterstatus    indp0  OK
+=obterstatus    indp1  OK
+
+==Obter informação com erro
+=obterstatus    indp2  NaoExiste
+
+==Atualiza peça sem erro
+=atualizapeca   indp0 final1 status0 OK
+=atualizapeca   indp1 final2 status0 OK
+
+==Atualiza peça com erro
+=atualizapeca   indp0 final0 status0 FinalErrado
+=atualizapeca   indp0 final3 status0 FinalErrado
+=atualizapeca   indp0 final1 status2 StatusErrado
+=atualizapeca   indp0 final2 status2 StatusErrado
+=atualizapeca   indp2 final1 status1 NaoExiste
+
+==Destruir peca corretamente
+=destruirpeca   indp0  OK
+=destruirpeca   indp1  OK
+
+//                                       
+//        FIM DO SCRIPT DE TESTE         
+//                                        
+
