@@ -1,0 +1,6 @@
+/OUT:TRAB4-2.exe
+/INCREMENTAL:NO
+/MACHINE:IX86
+testcir.obj  lcirc.obj  
+ArcaboucoTeste.lib
+
