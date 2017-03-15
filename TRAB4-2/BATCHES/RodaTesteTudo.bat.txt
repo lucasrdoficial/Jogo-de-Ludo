@@ -1,0 +1,14 @@
+rem testa todos os scripts
+
+cls
+
+if exist estatisticas.estat  del estatisticas.estat
+
+TRAB4-2Debug      /sTesteContador.script       			/lTesteContador            /aestatisticas
+
+TRAB4-2Debug      /sTesteControleEspaco.script       /lTesteControleEspaco            /aestatisticas
+
+type acumulador.count
+
+
+pause
