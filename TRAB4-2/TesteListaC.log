@@ -1,0 +1,46 @@
+
+!!! Inicio dos testes
+!!!      Construto sob teste: TRAB4-2
+!!!      Script de teste:     TesteListaC.script
+
+!!!    0  Linha:     1  // Script:    TesteListaCirc.script 
+!!!    0  Linha:     2  // Autor:     Daniel Cunha Rios 
+!!!    0  Linha:     3  // Data:      08/out/2016 
+!!!    0  Linha:     4  // PropÃ³sito: Testar o mÃ³dulo lista 
+!!!    0  Linha:     5  //            circular 
+    7  == Iniciar controle de espaÃ§o dinÃ¢mico
+   10  == Inicializar valores
+   36  ==Criar Lista Circular 0
+   39  == Verificar ObterValor relativo a lista vazia
+   42  == Verifica comando recuperar
+>>>    1  Linha:    43  Condicao de retorno errada ao Obter Valor. Deveria ser: 0  É: 3
+<<<    0  Linha:    44  Falha esperada foi recuperada. 
+   46  == Inserir elemento em lista vazia
+   50  == Inserir elemento apÃ³s primeiro
+   54  == Inserir elemento antes do Ãºltimo
+   58  == Excluir elemento do meio
+   62  == Buscar elemento que nÃ£o existe
+   65  == Excluir elemento do inÃ­cio
+   69  == Excluir elemento final, Ãºnico
+   73  == Ver se a lista ficou vazia
+   76  == Destruir a lista
+   79  == Criar uma lista com dois elementos
+   84  == Esvaziar a lista e ver se ficou vazia
+   89  == Destruir a lista
+   92  == Criar uma lista com quatro elementos
+   99  == Verificar a lista de trÃ¡s para diante
+  109  == Verificar a lista de frente para trÃ¡s
+  119  == Destruir a lista
+!!!    0  Linha:   123  // 
+!!!    0  Linha:   124  //        FIM DO SCRIPT DE TESTE 
+!!!    0  Linha:   125  // 
+
+!!! Número de linhas lidas:         125
+!!! Número de casos de teste:        21
+!!! Número comandos corretos:        67
+!!! Número de falhas encontradas:     0
+
+!!! Não foram encontrados problemas
+
+
+!!! Numero de espacos ainda alocados: 27

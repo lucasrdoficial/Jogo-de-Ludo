@@ -1,0 +1,263 @@
+
+!!! Inicio dos testes
+!!!      Construto sob teste: TRAB4-2Debug
+!!!      Script de teste:     TesteListaDeturp.script
+
+!!!    0  Linha:     1  // Script:    TesteListaDeturp.script 
+!!!    0  Linha:     2  // Autores: Daniel Cunha 
+>>>    1  Linha:     3  Comando de teste ignorado:              Lucas Rodrigues
+>>>    2  Linha:     4  Comando de teste ignorado:              Rodrigo Cortezi
+!!!    2  Linha:     5  // Data:      10/dez/2016 
+!!!    2  Linha:     6  // PropÃ³sito: Testar verificacao apos deturpacao da Lista Circular 
+!!!    2  Linha:     7  // Para que o teste ocorra completamente, TesteListaCDebug.script deve ser rodado antes 
+!!!    2  Linha:     8  // Este teste resulta em vazamento de memÃ³ria, pois a deturpaÃ§Ã£o impede que a destruiÃ§Ã£o 
+!!!    2  Linha:     9  //   seja chamada, jÃ¡ que a mesma faria o programa voar. 
+!!!    2  Linha:    10  // 
+   12  == Inicializar valores
+   44  == Inicializar contadores
+   49  == Testar deturpacao tipo 0
+ll>    3  Linha:    56  Parâmetro não está definido:  elem7
+>>>    4  Linha:    56  Erro nos parâmetros do comando:  =obtervalor lista0 elem7 NaoEncontrou
+>>>    5  Linha:    58  Comando de teste ignorado:  =obtervalor lista0 elem4 OK
+>>>    6  Linha:    59  Comando de teste ignorado:  =inserirelementoesq lista0 elem5 OK
+>>>    7  Linha:    60  Comando de teste ignorado:  =removeelemento lista0 elem5 OK
+>>>    8  Linha:    61  Comando de teste ignorado:  =avancarelementocorrente lista0 num1 OK
+>>>    9  Linha:    64  Comando de teste ignorado:  =deturpar lista0 0
+>>>   10  Linha:    66  Comando de teste ignorado:  =verificar lista0 5
+   70  == Testar deturpacao tipo 1
+>>>   11  Linha:    71  Erro nos parâmetros do comando:  =criarlistac   lista0  OK
+>>>   12  Linha:    73  Comando de teste ignorado:  =inserirelementodir lista0 elem1 OK
+>>>   13  Linha:    74  Comando de teste ignorado:  =inserirelementoesq lista0 elem2 OK
+>>>   14  Linha:    75  Comando de teste ignorado:  =inserirelementodir lista0 elem3 OK
+>>>   15  Linha:    76  Comando de teste ignorado:  =obtervalor lista0 elem1 OK
+>>>   16  Linha:    77  Comando de teste ignorado:  =obtervalor lista0 elem7 NaoEncontrou
+>>>   17  Linha:    78  Comando de teste ignorado:  =inserirelementodir lista0 elem4 OK
+>>>   18  Linha:    79  Comando de teste ignorado:  =obtervalor lista0 elem4 OK
+>>>   19  Linha:    80  Comando de teste ignorado:  =inserirelementoesq lista0 elem5 OK
+>>>   20  Linha:    81  Comando de teste ignorado:  =removeelemento lista0 elem5 OK
+>>>   21  Linha:    82  Comando de teste ignorado:  =avancarelementocorrente lista0 num1 OK
+>>>   22  Linha:    85  Comando de teste ignorado:  =deturpar lista0 1
+>>>   23  Linha:    87  Comando de teste ignorado:  =verificar lista0 5
+   89  == Testar deturpacao tipo 2
+>>>   24  Linha:    90  Erro nos parâmetros do comando:  =criarlistac   lista0  OK
+>>>   25  Linha:    92  Comando de teste ignorado:  =inserirelementodir lista0 elem1 OK
+>>>   26  Linha:    93  Comando de teste ignorado:  =inserirelementoesq lista0 elem2 OK
+>>>   27  Linha:    94  Comando de teste ignorado:  =inserirelementodir lista0 elem3 OK
+>>>   28  Linha:    95  Comando de teste ignorado:  =obtervalor lista0 elem1 OK
+>>>   29  Linha:    96  Comando de teste ignorado:  =obtervalor lista0 elem7 NaoEncontrou
+>>>   30  Linha:    97  Comando de teste ignorado:  =inserirelementodir lista0 elem4 OK
+>>>   31  Linha:    98  Comando de teste ignorado:  =obtervalor lista0 elem4 OK
+>>>   32  Linha:    99  Comando de teste ignorado:  =inserirelementoesq lista0 elem5 OK
+>>>   33  Linha:   100  Comando de teste ignorado:  =removeelemento lista0 elem5 OK
+>>>   34  Linha:   101  Comando de teste ignorado:  =avancarelementocorrente lista0 num1 OK
+>>>   35  Linha:   104  Comando de teste ignorado:  =deturpar lista0 2
+>>>   36  Linha:   106  Comando de teste ignorado:  =verificar lista0 5
+  108  == Testar deturpacao tipo 3
+>>>   37  Linha:   109  Erro nos parâmetros do comando:  =criarlistac   lista0  OK
+>>>   38  Linha:   111  Comando de teste ignorado:  =inserirelementodir lista0 elem1 OK
+>>>   39  Linha:   112  Comando de teste ignorado:  =inserirelementoesq lista0 elem2 OK
+>>>   40  Linha:   113  Comando de teste ignorado:  =inserirelementodir lista0 elem3 OK
+>>>   41  Linha:   114  Comando de teste ignorado:  =obtervalor lista0 elem1 OK
+>>>   42  Linha:   115  Comando de teste ignorado:  =obtervalor lista0 elem7 NaoEncontrou
+>>>   43  Linha:   116  Comando de teste ignorado:  =inserirelementodir lista0 elem4 OK
+>>>   44  Linha:   117  Comando de teste ignorado:  =obtervalor lista0 elem4 OK
+>>>   45  Linha:   118  Comando de teste ignorado:  =inserirelementoesq lista0 elem5 OK
+>>>   46  Linha:   119  Comando de teste ignorado:  =removeelemento lista0 elem5 OK
+>>>   47  Linha:   120  Comando de teste ignorado:  =avancarelementocorrente lista0 num1 OK
+>>>   48  Linha:   123  Comando de teste ignorado:  =deturpar lista0 3
+>>>   49  Linha:   125  Comando de teste ignorado:  =verificar lista0 5
+  127  == Testar deturpacao tipo 4
+>>>   50  Linha:   128  Erro nos parâmetros do comando:  =criarlistac   lista0  OK
+>>>   51  Linha:   130  Comando de teste ignorado:  =inserirelementodir lista0 elem1 OK
+>>>   52  Linha:   131  Comando de teste ignorado:  =inserirelementoesq lista0 elem2 OK
+>>>   53  Linha:   132  Comando de teste ignorado:  =inserirelementodir lista0 elem3 OK
+>>>   54  Linha:   133  Comando de teste ignorado:  =obtervalor lista0 elem1 OK
+>>>   55  Linha:   134  Comando de teste ignorado:  =obtervalor lista0 elem7 NaoEncontrou
+>>>   56  Linha:   135  Comando de teste ignorado:  =inserirelementodir lista0 elem4 OK
+>>>   57  Linha:   136  Comando de teste ignorado:  =obtervalor lista0 elem4 OK
+>>>   58  Linha:   137  Comando de teste ignorado:  =inserirelementoesq lista0 elem5 OK
+>>>   59  Linha:   138  Comando de teste ignorado:  =removeelemento lista0 elem5 OK
+>>>   60  Linha:   139  Comando de teste ignorado:  =avancarelementocorrente lista0 num1 OK
+>>>   61  Linha:   142  Comando de teste ignorado:  =deturpar lista0 4
+>>>   62  Linha:   144  Comando de teste ignorado:  =verificar lista0 5
+  146  == Testar deturpacao tipo 5
+>>>   63  Linha:   147  Erro nos parâmetros do comando:  =criarlistac   lista0  OK
+>>>   64  Linha:   149  Comando de teste ignorado:  =inserirelementodir lista0 elem1 OK
+>>>   65  Linha:   150  Comando de teste ignorado:  =inserirelementoesq lista0 elem2 OK
+>>>   66  Linha:   151  Comando de teste ignorado:  =inserirelementodir lista0 elem3 OK
+>>>   67  Linha:   152  Comando de teste ignorado:  =obtervalor lista0 elem1 OK
+>>>   68  Linha:   153  Comando de teste ignorado:  =obtervalor lista0 elem7 NaoEncontrou
+>>>   69  Linha:   154  Comando de teste ignorado:  =inserirelementodir lista0 elem4 OK
+>>>   70  Linha:   155  Comando de teste ignorado:  =obtervalor lista0 elem4 OK
+>>>   71  Linha:   156  Comando de teste ignorado:  =inserirelementoesq lista0 elem5 OK
+>>>   72  Linha:   157  Comando de teste ignorado:  =removeelemento lista0 elem5 OK
+>>>   73  Linha:   158  Comando de teste ignorado:  =avancarelementocorrente lista0 num1 OK
+>>>   74  Linha:   161  Comando de teste ignorado:  =deturpar lista0 5
+>>>   75  Linha:   163  Comando de teste ignorado:  =verificar lista0 5
+  165  == Testar deturpacao tipo 6
+>>>   76  Linha:   166  Erro nos parâmetros do comando:  =criarlistac   lista0  OK
+>>>   77  Linha:   168  Comando de teste ignorado:  =inserirelementodir lista0 elem1 OK
+>>>   78  Linha:   169  Comando de teste ignorado:  =inserirelementoesq lista0 elem2 OK
+>>>   79  Linha:   170  Comando de teste ignorado:  =inserirelementodir lista0 elem3 OK
+>>>   80  Linha:   171  Comando de teste ignorado:  =obtervalor lista0 elem1 OK
+>>>   81  Linha:   172  Comando de teste ignorado:  =obtervalor lista0 elem7 NaoEncontrou
+>>>   82  Linha:   173  Comando de teste ignorado:  =inserirelementodir lista0 elem4 OK
+>>>   83  Linha:   174  Comando de teste ignorado:  =obtervalor lista0 elem4 OK
+>>>   84  Linha:   175  Comando de teste ignorado:  =inserirelementoesq lista0 elem5 OK
+>>>   85  Linha:   176  Comando de teste ignorado:  =removeelemento lista0 elem5 OK
+>>>   86  Linha:   177  Comando de teste ignorado:  =avancarelementocorrente lista0 num1 OK
+>>>   87  Linha:   180  Comando de teste ignorado:  =deturpar lista0 6
+>>>   88  Linha:   182  Comando de teste ignorado:  =verificar lista0 5
+  184  == Testar deturpacao tipo 7
+>>>   89  Linha:   185  Erro nos parâmetros do comando:  =criarlistac   lista0  OK
+>>>   90  Linha:   187  Comando de teste ignorado:  =inserirelementodir lista0 elem1 OK
+>>>   91  Linha:   188  Comando de teste ignorado:  =inserirelementoesq lista0 elem2 OK
+>>>   92  Linha:   189  Comando de teste ignorado:  =inserirelementodir lista0 elem3 OK
+>>>   93  Linha:   190  Comando de teste ignorado:  =obtervalor lista0 elem1 OK
+>>>   94  Linha:   191  Comando de teste ignorado:  =obtervalor lista0 elem7 NaoEncontrou
+>>>   95  Linha:   192  Comando de teste ignorado:  =inserirelementodir lista0 elem4 OK
+>>>   96  Linha:   193  Comando de teste ignorado:  =obtervalor lista0 elem4 OK
+>>>   97  Linha:   194  Comando de teste ignorado:  =inserirelementoesq lista0 elem5 OK
+>>>   98  Linha:   195  Comando de teste ignorado:  =removeelemento lista0 elem5 OK
+>>>   99  Linha:   196  Comando de teste ignorado:  =avancarelementocorrente lista0 num1 OK
+>>>  100  Linha:   199  Comando de teste ignorado:  =deturpar lista0 7
+>>>  101  Linha:   201  Comando de teste ignorado:  =verificar lista0 5
+  203  == Testar deturpacao tipo 8
+>>>  102  Linha:   204  Erro nos parâmetros do comando:  =criarlistac   lista0  OK
+>>>  103  Linha:   206  Comando de teste ignorado:  =inserirelementodir lista0 elem1 OK
+>>>  104  Linha:   207  Comando de teste ignorado:  =inserirelementoesq lista0 elem2 OK
+>>>  105  Linha:   208  Comando de teste ignorado:  =inserirelementodir lista0 elem3 OK
+>>>  106  Linha:   209  Comando de teste ignorado:  =obtervalor lista0 elem1 OK
+>>>  107  Linha:   210  Comando de teste ignorado:  =obtervalor lista0 elem7 NaoEncontrou
+>>>  108  Linha:   211  Comando de teste ignorado:  =inserirelementodir lista0 elem4 OK
+>>>  109  Linha:   212  Comando de teste ignorado:  =obtervalor lista0 elem4 OK
+>>>  110  Linha:   213  Comando de teste ignorado:  =inserirelementoesq lista0 elem5 OK
+>>>  111  Linha:   214  Comando de teste ignorado:  =removeelemento lista0 elem5 OK
+>>>  112  Linha:   215  Comando de teste ignorado:  =avancarelementocorrente lista0 num1 OK
+>>>  113  Linha:   218  Comando de teste ignorado:  =deturpar lista0 8
+>>>  114  Linha:   220  Comando de teste ignorado:  =verificar lista0 5
+  222  == Testar deturpacao tipo 9
+>>>  115  Linha:   223  Erro nos parâmetros do comando:  =criarlistac   lista0  OK
+>>>  116  Linha:   225  Comando de teste ignorado:  =inserirelementodir lista0 elem1 OK
+>>>  117  Linha:   226  Comando de teste ignorado:  =inserirelementoesq lista0 elem2 OK
+>>>  118  Linha:   227  Comando de teste ignorado:  =inserirelementodir lista0 elem3 OK
+>>>  119  Linha:   228  Comando de teste ignorado:  =obtervalor lista0 elem1 OK
+>>>  120  Linha:   229  Comando de teste ignorado:  =obtervalor lista0 elem7 NaoEncontrou
+>>>  121  Linha:   230  Comando de teste ignorado:  =inserirelementodir lista0 elem4 OK
+>>>  122  Linha:   231  Comando de teste ignorado:  =obtervalor lista0 elem4 OK
+>>>  123  Linha:   232  Comando de teste ignorado:  =inserirelementoesq lista0 elem5 OK
+>>>  124  Linha:   233  Comando de teste ignorado:  =removeelemento lista0 elem5 OK
+>>>  125  Linha:   234  Comando de teste ignorado:  =avancarelementocorrente lista0 num1 OK
+>>>  126  Linha:   237  Comando de teste ignorado:  =deturpar lista0 9
+>>>  127  Linha:   239  Comando de teste ignorado:  =verificar lista0 5
+  241  == Testar deturpacao tipo 10
+>>>  128  Linha:   242  Erro nos parâmetros do comando:  =criarlistac   lista0  OK
+>>>  129  Linha:   244  Comando de teste ignorado:  =inserirelementodir lista0 elem1 OK
+>>>  130  Linha:   245  Comando de teste ignorado:  =inserirelementoesq lista0 elem2 OK
+>>>  131  Linha:   246  Comando de teste ignorado:  =inserirelementodir lista0 elem3 OK
+>>>  132  Linha:   247  Comando de teste ignorado:  =obtervalor lista0 elem1 OK
+>>>  133  Linha:   248  Comando de teste ignorado:  =obtervalor lista0 elem7 NaoEncontrou
+>>>  134  Linha:   249  Comando de teste ignorado:  =inserirelementodir lista0 elem4 OK
+>>>  135  Linha:   250  Comando de teste ignorado:  =obtervalor lista0 elem4 OK
+>>>  136  Linha:   251  Comando de teste ignorado:  =inserirelementoesq lista0 elem5 OK
+>>>  137  Linha:   252  Comando de teste ignorado:  =removeelemento lista0 elem5 OK
+>>>  138  Linha:   253  Comando de teste ignorado:  =avancarelementocorrente lista0 num1 OK
+>>>  139  Linha:   256  Comando de teste ignorado:  =deturpar lista0 10
+>>>  140  Linha:   258  Comando de teste ignorado:  =verificar lista0 5
+  260  == Testar deturpacao tipo 11
+>>>  141  Linha:   261  Erro nos parâmetros do comando:  =criarlistac   lista0  OK
+>>>  142  Linha:   263  Comando de teste ignorado:  =inserirelementodir lista0 elem1 OK
+>>>  143  Linha:   264  Comando de teste ignorado:  =inserirelementoesq lista0 elem2 OK
+>>>  144  Linha:   265  Comando de teste ignorado:  =inserirelementodir lista0 elem3 OK
+>>>  145  Linha:   266  Comando de teste ignorado:  =obtervalor lista0 elem1 OK
+>>>  146  Linha:   267  Comando de teste ignorado:  =obtervalor lista0 elem7 NaoEncontrou
+>>>  147  Linha:   268  Comando de teste ignorado:  =inserirelementodir lista0 elem4 OK
+>>>  148  Linha:   269  Comando de teste ignorado:  =obtervalor lista0 elem4 OK
+>>>  149  Linha:   270  Comando de teste ignorado:  =inserirelementoesq lista0 elem5 OK
+>>>  150  Linha:   271  Comando de teste ignorado:  =removeelemento lista0 elem5 OK
+>>>  151  Linha:   272  Comando de teste ignorado:  =avancarelementocorrente lista0 num1 OK
+>>>  152  Linha:   275  Comando de teste ignorado:  =deturpar lista0 11
+>>>  153  Linha:   277  Comando de teste ignorado:  =verificar lista0 5
+  279  == Testar deturpacao tipo 12
+>>>  154  Linha:   280  Erro nos parâmetros do comando:  =criarlistac   lista0  OK
+>>>  155  Linha:   282  Comando de teste ignorado:  =inserirelementodir lista0 elem1 OK
+>>>  156  Linha:   283  Comando de teste ignorado:  =inserirelementoesq lista0 elem2 OK
+>>>  157  Linha:   284  Comando de teste ignorado:  =inserirelementodir lista0 elem3 OK
+>>>  158  Linha:   285  Comando de teste ignorado:  =obtervalor lista0 elem1 OK
+>>>  159  Linha:   286  Comando de teste ignorado:  =obtervalor lista0 elem7 NaoEncontrou
+>>>  160  Linha:   287  Comando de teste ignorado:  =inserirelementodir lista0 elem4 OK
+>>>  161  Linha:   288  Comando de teste ignorado:  =obtervalor lista0 elem4 OK
+>>>  162  Linha:   289  Comando de teste ignorado:  =inserirelementoesq lista0 elem5 OK
+>>>  163  Linha:   290  Comando de teste ignorado:  =removeelemento lista0 elem5 OK
+>>>  164  Linha:   291  Comando de teste ignorado:  =avancarelementocorrente lista0 num1 OK
+>>>  165  Linha:   293  Comando de teste ignorado:  =deturpar lista0 12
+>>>  166  Linha:   295  Comando de teste ignorado:  =verificar lista0 5
+  297  == Testar deturpacao tipo 13
+>>>  167  Linha:   298  Erro nos parâmetros do comando:  =criarlistac   lista0  OK
+>>>  168  Linha:   300  Comando de teste ignorado:  =inserirelementodir lista0 elem1 OK
+>>>  169  Linha:   301  Comando de teste ignorado:  =inserirelementoesq lista0 elem2 OK
+>>>  170  Linha:   302  Comando de teste ignorado:  =inserirelementodir lista0 elem3 OK
+>>>  171  Linha:   303  Comando de teste ignorado:  =obtervalor lista0 elem1 OK
+>>>  172  Linha:   304  Comando de teste ignorado:  =obtervalor lista0 elem7 NaoEncontrou
+>>>  173  Linha:   305  Comando de teste ignorado:  =inserirelementodir lista0 elem4 OK
+>>>  174  Linha:   306  Comando de teste ignorado:  =obtervalor lista0 elem4 OK
+>>>  175  Linha:   307  Comando de teste ignorado:  =inserirelementoesq lista0 elem5 OK
+>>>  176  Linha:   308  Comando de teste ignorado:  =removeelemento lista0 elem5 OK
+>>>  177  Linha:   309  Comando de teste ignorado:  =avancarelementocorrente lista0 num1 OK
+>>>  178  Linha:   312  Comando de teste ignorado:  =deturpar lista0 13
+>>>  179  Linha:   314  Comando de teste ignorado:  =verificar lista0 5
+  316  == Destruir a lista
+>>>  180  Linha:   317  Erro nos parâmetros do comando:  =destruirlista   lista2  OK
+  319  == Terminar controlar contadores
+cc>  181  Linha:   321   Contagem em "CriaElemento_if0" é zero.
+cc>  182  Linha:   321   Contagem em "LST_AvancarElementoCorrente_if0" é zero.
+cc>  183  Linha:   321   Contagem em "LST_BuscaElemento_pr1" é zero.
+cc>  184  Linha:   321   Contagem em "LST_BuscaElemento_while_fim" é zero.
+cc>  185  Linha:   321   Contagem em "LST_CriaLista_if0" é zero.
+cc>  186  Linha:   321   Contagem em "LST_InsereElemDireita_if0" é zero.
+cc>  187  Linha:   321   Contagem em "LST_InsereElemEsquerda_if0" é zero.
+cc>  188  Linha:   321   Contagem em "LST_RemoveElemento_if0" é zero.
+cc>  189  Linha:   321   Contagem em "LST_VerificarCabeca" é zero.
+cc>  190  Linha:   321   Contagem em "LST_VerificarCabeca_if0" é zero.
+cc>  191  Linha:   321   Contagem em "LST_VerificarCabeca_if1" é zero.
+cc>  192  Linha:   321   Contagem em "LST_VerificarCabeca_if2" é zero.
+cc>  193  Linha:   321   Contagem em "LST_VerificarCabeca_if3" é zero.
+cc>  194  Linha:   321   Contagem em "LST_VerificarCabeca_if4" é zero.
+cc>  195  Linha:   321   Contagem em "LST_VerificarCabeca_pr0" é zero.
+cc>  196  Linha:   321   Contagem em "LST_VerificarCabeca_pr1" é zero.
+cc>  197  Linha:   321   Contagem em "LST_VerificarCabeca_pr2" é zero.
+cc>  198  Linha:   321   Contagem em "LST_VerificarCabeca_pr3" é zero.
+cc>  199  Linha:   321   Contagem em "LST_VerificarElem" é zero.
+cc>  200  Linha:   321   Contagem em "LST_VerificarElem_if0" é zero.
+cc>  201  Linha:   321   Contagem em "LST_VerificarElem_if1" é zero.
+cc>  202  Linha:   321   Contagem em "LST_VerificarElem_if2" é zero.
+cc>  203  Linha:   321   Contagem em "LST_VerificarElem_if3" é zero.
+cc>  204  Linha:   321   Contagem em "LST_VerificarElem_if4" é zero.
+cc>  205  Linha:   321   Contagem em "LST_VerificarElem_if5" é zero.
+cc>  206  Linha:   321   Contagem em "LST_VerificarElem_if6" é zero.
+cc>  207  Linha:   321   Contagem em "LST_VerificarElem_pr0" é zero.
+cc>  208  Linha:   321   Contagem em "LST_VerificarElem_pr1" é zero.
+cc>  209  Linha:   321   Contagem em "LST_VerificarElem_pr2" é zero.
+cc>  210  Linha:   321   Contagem em "LST_VerificarElem_pr3" é zero.
+cc>  211  Linha:   321   Contagem em "LST_VerificarElem_pr4" é zero.
+cc>  212  Linha:   321   Contagem em "LST_VerificarLista" é zero.
+cc>  213  Linha:   321   Contagem em "LST_VerificarLista_if0" é zero.
+cc>  214  Linha:   321   Contagem em "LST_VerificarLista_pr0" é zero.
+cc>  215  Linha:   321   Contagem em "LST_VerificarLista_pr1" é zero.
+cc>  216  Linha:   321   Contagem em "LiberarElemento_EXCECAO" é zero.
+cc>  217  Linha:   321   Contagem em "LiberarElemento_if0" é zero.
+>>>  218  Linha:   321  Número de contadores zero errado. Deveria ser: 0  É: 37
+  323  == Terminar contagem
+!!!  218  Linha:   326  // 
+!!!  218  Linha:   327  //        FIM DO SCRIPT DE TESTE 
+!!!  218  Linha:   328  // 
+
+!!! Número de linhas lidas:         328
+!!! Número de casos de teste:        19
+!!! Número comandos corretos:        37
+!!! Número de falhas encontradas:   218
+
+!!! Foram encontrados problemas
+
+
+!!! Numero de espacos ainda alocados: 10

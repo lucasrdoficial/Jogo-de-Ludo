@@ -1,0 +1,328 @@
+// Script:    TesteListaDeturp.script
+// Autores: Daniel Cunha
+            Lucas Rodrigues
+            Rodrigo Cortezi
+// Data:      10/dez/2016
+// Propósito: Testar verificacao apos deturpacao da Lista Circular
+// Para que o teste ocorra completamente, TesteListaCDebug.script deve ser rodado antes
+// Este teste resulta em vazamento de memória, pois a deturpação impede que a destruição
+//   seja chamada, já que a mesma faria o programa voar.
+//
+
+== Inicializar valores
+=declararparm   lista0  int 0
+=declararparm   lista1  int 1
+=declararparm   lista2  int 2
+=declararparm   lista3  int 3
+=declararparm   lista4  int 4
+=declararparm   lista5  int 5
+
+=declararparm    elem0    string  "jorge"
+=declararparm    elem1    string  "rodrigo"
+=declararparm    elem2    string  "lucas"
+=declararparm    elem3    string  "daniel"
+=declararparm    elem4    string  "jobson"
+=declararparm    elem5    string  "liberon"
+
+=declararparm    valor0   string  "jorge"
+=declararparm    valor1   string  "rodrigo"
+=declararparm    valor2   string  "lucas"
+=declararparm    valor3   string  "daniel"
+=declararparm    valor4   string  "papito"
+
+=declararparm    num0     int -1
+=declararparm    num1     int  1
+=declararparm    num2     int  10
+=declararparm    num3     int -10
+
+=declararparm   OK             int 0
+=declararparm   NaoEncontrou   int 1
+=declararparm   MemoriaCheia   int 2
+=declararparm   Vazia          int 3     
+=declararparm   ErroEstrutura  int 4     
+
+== Inicializar contadores
+=inicializarcontadores  "acumulador"
+=lercontadores          "LCIRC"
+=iniciarcontagem
+
+== Testar deturpacao tipo 0
+=criarlistac   lista0  OK
+=inserirelementoesq lista0 elem0 OK
+=inserirelementodir lista0 elem1 OK
+=inserirelementoesq lista0 elem2 OK
+=inserirelementodir lista0 elem3 OK
+=obtervalor lista0 elem1 OK
+=obtervalor lista0 elem7 NaoEncontrou
+=inserirelementodir lista0 elem4 OK
+=obtervalor lista0 elem4 OK
+=inserirelementoesq lista0 elem5 OK
+=removeelemento lista0 elem5 OK
+=avancarelementocorrente lista0 num1 OK
+
+
+=deturpar lista0 0
+
+=verificar lista0 5
+
+
+
+== Testar deturpacao tipo 1
+=criarlistac   lista0  OK
+=inserirelementoesq lista0 elem0 OK
+=inserirelementodir lista0 elem1 OK
+=inserirelementoesq lista0 elem2 OK
+=inserirelementodir lista0 elem3 OK
+=obtervalor lista0 elem1 OK
+=obtervalor lista0 elem7 NaoEncontrou
+=inserirelementodir lista0 elem4 OK
+=obtervalor lista0 elem4 OK
+=inserirelementoesq lista0 elem5 OK
+=removeelemento lista0 elem5 OK
+=avancarelementocorrente lista0 num1 OK
+
+
+=deturpar lista0 1
+
+=verificar lista0 5
+
+== Testar deturpacao tipo 2
+=criarlistac   lista0  OK
+=inserirelementoesq lista0 elem0 OK
+=inserirelementodir lista0 elem1 OK
+=inserirelementoesq lista0 elem2 OK
+=inserirelementodir lista0 elem3 OK
+=obtervalor lista0 elem1 OK
+=obtervalor lista0 elem7 NaoEncontrou
+=inserirelementodir lista0 elem4 OK
+=obtervalor lista0 elem4 OK
+=inserirelementoesq lista0 elem5 OK
+=removeelemento lista0 elem5 OK
+=avancarelementocorrente lista0 num1 OK
+
+
+=deturpar lista0 2
+
+=verificar lista0 5
+
+== Testar deturpacao tipo 3
+=criarlistac   lista0  OK
+=inserirelementoesq lista0 elem0 OK
+=inserirelementodir lista0 elem1 OK
+=inserirelementoesq lista0 elem2 OK
+=inserirelementodir lista0 elem3 OK
+=obtervalor lista0 elem1 OK
+=obtervalor lista0 elem7 NaoEncontrou
+=inserirelementodir lista0 elem4 OK
+=obtervalor lista0 elem4 OK
+=inserirelementoesq lista0 elem5 OK
+=removeelemento lista0 elem5 OK
+=avancarelementocorrente lista0 num1 OK
+
+
+=deturpar lista0 3
+
+=verificar lista0 5
+
+== Testar deturpacao tipo 4
+=criarlistac   lista0  OK
+=inserirelementoesq lista0 elem0 OK
+=inserirelementodir lista0 elem1 OK
+=inserirelementoesq lista0 elem2 OK
+=inserirelementodir lista0 elem3 OK
+=obtervalor lista0 elem1 OK
+=obtervalor lista0 elem7 NaoEncontrou
+=inserirelementodir lista0 elem4 OK
+=obtervalor lista0 elem4 OK
+=inserirelementoesq lista0 elem5 OK
+=removeelemento lista0 elem5 OK
+=avancarelementocorrente lista0 num1 OK
+
+
+=deturpar lista0 4
+
+=verificar lista0 5
+
+== Testar deturpacao tipo 5
+=criarlistac   lista0  OK
+=inserirelementoesq lista0 elem0 OK
+=inserirelementodir lista0 elem1 OK
+=inserirelementoesq lista0 elem2 OK
+=inserirelementodir lista0 elem3 OK
+=obtervalor lista0 elem1 OK
+=obtervalor lista0 elem7 NaoEncontrou
+=inserirelementodir lista0 elem4 OK
+=obtervalor lista0 elem4 OK
+=inserirelementoesq lista0 elem5 OK
+=removeelemento lista0 elem5 OK
+=avancarelementocorrente lista0 num1 OK
+
+
+=deturpar lista0 5
+
+=verificar lista0 5
+
+== Testar deturpacao tipo 6
+=criarlistac   lista0  OK
+=inserirelementoesq lista0 elem0 OK
+=inserirelementodir lista0 elem1 OK
+=inserirelementoesq lista0 elem2 OK
+=inserirelementodir lista0 elem3 OK
+=obtervalor lista0 elem1 OK
+=obtervalor lista0 elem7 NaoEncontrou
+=inserirelementodir lista0 elem4 OK
+=obtervalor lista0 elem4 OK
+=inserirelementoesq lista0 elem5 OK
+=removeelemento lista0 elem5 OK
+=avancarelementocorrente lista0 num1 OK
+
+
+=deturpar lista0 6
+
+=verificar lista0 5
+
+== Testar deturpacao tipo 7
+=criarlistac   lista0  OK
+=inserirelementoesq lista0 elem0 OK
+=inserirelementodir lista0 elem1 OK
+=inserirelementoesq lista0 elem2 OK
+=inserirelementodir lista0 elem3 OK
+=obtervalor lista0 elem1 OK
+=obtervalor lista0 elem7 NaoEncontrou
+=inserirelementodir lista0 elem4 OK
+=obtervalor lista0 elem4 OK
+=inserirelementoesq lista0 elem5 OK
+=removeelemento lista0 elem5 OK
+=avancarelementocorrente lista0 num1 OK
+
+
+=deturpar lista0 7
+
+=verificar lista0 5
+
+== Testar deturpacao tipo 8
+=criarlistac   lista0  OK
+=inserirelementoesq lista0 elem0 OK
+=inserirelementodir lista0 elem1 OK
+=inserirelementoesq lista0 elem2 OK
+=inserirelementodir lista0 elem3 OK
+=obtervalor lista0 elem1 OK
+=obtervalor lista0 elem7 NaoEncontrou
+=inserirelementodir lista0 elem4 OK
+=obtervalor lista0 elem4 OK
+=inserirelementoesq lista0 elem5 OK
+=removeelemento lista0 elem5 OK
+=avancarelementocorrente lista0 num1 OK
+
+
+=deturpar lista0 8
+
+=verificar lista0 5
+
+== Testar deturpacao tipo 9
+=criarlistac   lista0  OK
+=inserirelementoesq lista0 elem0 OK
+=inserirelementodir lista0 elem1 OK
+=inserirelementoesq lista0 elem2 OK
+=inserirelementodir lista0 elem3 OK
+=obtervalor lista0 elem1 OK
+=obtervalor lista0 elem7 NaoEncontrou
+=inserirelementodir lista0 elem4 OK
+=obtervalor lista0 elem4 OK
+=inserirelementoesq lista0 elem5 OK
+=removeelemento lista0 elem5 OK
+=avancarelementocorrente lista0 num1 OK
+
+
+=deturpar lista0 9
+
+=verificar lista0 5
+
+== Testar deturpacao tipo 10
+=criarlistac   lista0  OK
+=inserirelementoesq lista0 elem0 OK
+=inserirelementodir lista0 elem1 OK
+=inserirelementoesq lista0 elem2 OK
+=inserirelementodir lista0 elem3 OK
+=obtervalor lista0 elem1 OK
+=obtervalor lista0 elem7 NaoEncontrou
+=inserirelementodir lista0 elem4 OK
+=obtervalor lista0 elem4 OK
+=inserirelementoesq lista0 elem5 OK
+=removeelemento lista0 elem5 OK
+=avancarelementocorrente lista0 num1 OK
+
+
+=deturpar lista0 10
+
+=verificar lista0 5
+
+== Testar deturpacao tipo 11
+=criarlistac   lista0  OK
+=inserirelementoesq lista0 elem0 OK
+=inserirelementodir lista0 elem1 OK
+=inserirelementoesq lista0 elem2 OK
+=inserirelementodir lista0 elem3 OK
+=obtervalor lista0 elem1 OK
+=obtervalor lista0 elem7 NaoEncontrou
+=inserirelementodir lista0 elem4 OK
+=obtervalor lista0 elem4 OK
+=inserirelementoesq lista0 elem5 OK
+=removeelemento lista0 elem5 OK
+=avancarelementocorrente lista0 num1 OK
+
+
+=deturpar lista0 11
+
+=verificar lista0 5
+
+== Testar deturpacao tipo 12
+=criarlistac   lista0  OK
+=inserirelementoesq lista0 elem0 OK
+=inserirelementodir lista0 elem1 OK
+=inserirelementoesq lista0 elem2 OK
+=inserirelementodir lista0 elem3 OK
+=obtervalor lista0 elem1 OK
+=obtervalor lista0 elem7 NaoEncontrou
+=inserirelementodir lista0 elem4 OK
+=obtervalor lista0 elem4 OK
+=inserirelementoesq lista0 elem5 OK
+=removeelemento lista0 elem5 OK
+=avancarelementocorrente lista0 num1 OK
+
+=deturpar lista0 12
+
+=verificar lista0 5
+
+== Testar deturpacao tipo 13
+=criarlistac   lista0  OK
+=inserirelementoesq lista0 elem0 OK
+=inserirelementodir lista0 elem1 OK
+=inserirelementoesq lista0 elem2 OK
+=inserirelementodir lista0 elem3 OK
+=obtervalor lista0 elem1 OK
+=obtervalor lista0 elem7 NaoEncontrou
+=inserirelementodir lista0 elem4 OK
+=obtervalor lista0 elem4 OK
+=inserirelementoesq lista0 elem5 OK
+=removeelemento lista0 elem5 OK
+=avancarelementocorrente lista0 num1 OK
+
+
+=deturpar lista0 13
+
+=verificar lista0 5
+
+== Destruir a lista
+=destruirlista   lista2  OK
+
+== Terminar controlar contadores
+=pararcontagem
+=verificarcontagens    0
+
+== Terminar contagem
+=terminarcontadores
+
+//                                        
+//        FIM DO SCRIPT DE TESTE          
+//                                        

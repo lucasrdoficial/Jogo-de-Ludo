@@ -1,0 +1,190 @@
+
+!!! Inicio dos testes
+!!!      Construto sob teste: TRAB4-2Debug
+!!!      Script de teste:     TesteControleEspaco.script
+
+!!!    0  Linha:     1  // Script:    TesteListaCirc.script 
+!!!    0  Linha:     2  // Autor:     Daniel Cunha Rios 
+!!!    0  Linha:     3  // Data:      08/out/2016 
+!!!    0  Linha:     4  // PropÃ³sito: Testar o mÃ³dulo lista 
+!!!    0  Linha:     5  //            circular 
+    7  == Inicializar valores
+   38  == Iniciar contagem
+   43  ==Criar Lista Circular 0
+   46  == Verificar contadores, 1 jÃ¡ contou
+cc>    1  Linha:    47   Contagem em "CriaElemento" é zero.
+cc>    2  Linha:    47   Contagem em "CriaElemento_if0" é zero.
+cc>    3  Linha:    47   Contagem em "CriaElemento_pr0" é zero.
+cc>    4  Linha:    47   Contagem em "CriaElemento_pr1" é zero.
+cc>    5  Linha:    47   Contagem em "LST_AvancarElementoCorrente" é zero.
+cc>    6  Linha:    47   Contagem em "LST_AvancarElementoCorrente_if0" é zero.
+cc>    7  Linha:    47   Contagem em "LST_AvancarElementoCorrente_if1" é zero.
+cc>    8  Linha:    47   Contagem em "LST_AvancarElementoCorrente_if2" é zero.
+cc>    9  Linha:    47   Contagem em "LST_AvancarElementoCorrente_pr0" é zero.
+cc>   10  Linha:    47   Contagem em "LST_AvancarElementoCorrente_pr1" é zero.
+cc>   11  Linha:    47   Contagem em "LST_AvancarElementoCorrente_pr2" é zero.
+cc>   12  Linha:    47   Contagem em "LST_AvancarElementoCorrente_while0" é zero.
+cc>   13  Linha:    47   Contagem em "LST_AvancarElementoCorrente_while1" é zero.
+cc>   14  Linha:    47   Contagem em "LST_BuscaElemento" é zero.
+cc>   15  Linha:    47   Contagem em "LST_BuscaElemento_if0" é zero.
+cc>   16  Linha:    47   Contagem em "LST_BuscaElemento_if1" é zero.
+cc>   17  Linha:    47   Contagem em "LST_BuscaElemento_pr0" é zero.
+cc>   18  Linha:    47   Contagem em "LST_BuscaElemento_pr1" é zero.
+cc>   19  Linha:    47   Contagem em "LST_BuscaElemento_while0" é zero.
+cc>   20  Linha:    47   Contagem em "LST_BuscaElemento_while_fim" é zero.
+cc>   21  Linha:    47   Contagem em "LST_CriaLista_if0" é zero.
+cc>   22  Linha:    47   Contagem em "LST_DestruirLista" é zero.
+cc>   23  Linha:    47   Contagem em "LST_DestruirListapr0" é zero.
+cc>   24  Linha:    47   Contagem em "LST_EsvaziarLista" é zero.
+cc>   25  Linha:    47   Contagem em "LST_EsvaziarLista_if0" é zero.
+cc>   26  Linha:    47   Contagem em "LST_EsvaziarLista_pr0" é zero.
+cc>   27  Linha:    47   Contagem em "LST_EsvaziarLista_pr1" é zero.
+cc>   28  Linha:    47   Contagem em "LST_EsvaziarLista_pr2" é zero.
+cc>   29  Linha:    47   Contagem em "LST_EsvaziarLista_while0" é zero.
+cc>   30  Linha:    47   Contagem em "LST_InsereElemDireita" é zero.
+cc>   31  Linha:    47   Contagem em "LST_InsereElemDireita_else" é zero.
+cc>   32  Linha:    47   Contagem em "LST_InsereElemDireita_if0" é zero.
+cc>   33  Linha:    47   Contagem em "LST_InsereElemDireita_if1" é zero.
+cc>   34  Linha:    47   Contagem em "LST_InsereElemDireita_pr0" é zero.
+cc>   35  Linha:    47   Contagem em "LST_InsereElemDireita_pr1" é zero.
+cc>   36  Linha:    47   Contagem em "LST_InsereElemDireita_pr2" é zero.
+cc>   37  Linha:    47   Contagem em "LST_InsereElemEsquerda" é zero.
+cc>   38  Linha:    47   Contagem em "LST_InsereElemEsquerda_else" é zero.
+cc>   39  Linha:    47   Contagem em "LST_InsereElemEsquerda_if0" é zero.
+cc>   40  Linha:    47   Contagem em "LST_InsereElemEsquerda_if1" é zero.
+cc>   41  Linha:    47   Contagem em "LST_InsereElemEsquerda_pr0" é zero.
+cc>   42  Linha:    47   Contagem em "LST_InsereElemEsquerda_pr1" é zero.
+cc>   43  Linha:    47   Contagem em "LST_InsereElemEsquerda_pr2" é zero.
+cc>   44  Linha:    47   Contagem em "LST_ObterValor" é zero.
+cc>   45  Linha:    47   Contagem em "LST_ObterValor_if0" é zero.
+cc>   46  Linha:    47   Contagem em "LST_ObterValor_pr0" é zero.
+cc>   47  Linha:    47   Contagem em "LST_ObterValor_pr1" é zero.
+cc>   48  Linha:    47   Contagem em "LST_RemoveElemento" é zero.
+cc>   49  Linha:    47   Contagem em "LST_RemoveElemento_else" é zero.
+cc>   50  Linha:    47   Contagem em "LST_RemoveElemento_if0" é zero.
+cc>   51  Linha:    47   Contagem em "LST_RemoveElemento_if1" é zero.
+cc>   52  Linha:    47   Contagem em "LST_RemoveElemento_pr0" é zero.
+cc>   53  Linha:    47   Contagem em "LST_RemoveElemento_pr1" é zero.
+cc>   54  Linha:    47   Contagem em "LST_RemoveElemento_pr2" é zero.
+cc>   55  Linha:    47   Contagem em "LST_VerificarCabeca" é zero.
+cc>   56  Linha:    47   Contagem em "LST_VerificarCabeca_if0" é zero.
+cc>   57  Linha:    47   Contagem em "LST_VerificarCabeca_if1" é zero.
+cc>   58  Linha:    47   Contagem em "LST_VerificarCabeca_if2" é zero.
+cc>   59  Linha:    47   Contagem em "LST_VerificarCabeca_if3" é zero.
+cc>   60  Linha:    47   Contagem em "LST_VerificarCabeca_if4" é zero.
+cc>   61  Linha:    47   Contagem em "LST_VerificarCabeca_pr0" é zero.
+cc>   62  Linha:    47   Contagem em "LST_VerificarCabeca_pr1" é zero.
+cc>   63  Linha:    47   Contagem em "LST_VerificarCabeca_pr2" é zero.
+cc>   64  Linha:    47   Contagem em "LST_VerificarCabeca_pr3" é zero.
+cc>   65  Linha:    47   Contagem em "LST_VerificarElem" é zero.
+cc>   66  Linha:    47   Contagem em "LST_VerificarElem_if0" é zero.
+cc>   67  Linha:    47   Contagem em "LST_VerificarElem_if1" é zero.
+cc>   68  Linha:    47   Contagem em "LST_VerificarElem_if2" é zero.
+cc>   69  Linha:    47   Contagem em "LST_VerificarElem_if3" é zero.
+cc>   70  Linha:    47   Contagem em "LST_VerificarElem_if4" é zero.
+cc>   71  Linha:    47   Contagem em "LST_VerificarElem_if5" é zero.
+cc>   72  Linha:    47   Contagem em "LST_VerificarElem_if6" é zero.
+cc>   73  Linha:    47   Contagem em "LST_VerificarElem_pr0" é zero.
+cc>   74  Linha:    47   Contagem em "LST_VerificarElem_pr1" é zero.
+cc>   75  Linha:    47   Contagem em "LST_VerificarElem_pr2" é zero.
+cc>   76  Linha:    47   Contagem em "LST_VerificarElem_pr3" é zero.
+cc>   77  Linha:    47   Contagem em "LST_VerificarElem_pr4" é zero.
+cc>   78  Linha:    47   Contagem em "LST_VerificarLista" é zero.
+cc>   79  Linha:    47   Contagem em "LST_VerificarLista_if0" é zero.
+cc>   80  Linha:    47   Contagem em "LST_VerificarLista_pr0" é zero.
+cc>   81  Linha:    47   Contagem em "LST_VerificarLista_pr1" é zero.
+cc>   82  Linha:    47   Contagem em "LiberarElemento" é zero.
+cc>   83  Linha:    47   Contagem em "LiberarElemento_EXCECAO" é zero.
+cc>   84  Linha:    47   Contagem em "LiberarElemento_if0" é zero.
+cc>   85  Linha:    47   Contagem em "LiberarElemento_pr0" é zero.
+<<<    0  Linha:    49  Falhas registradas eram esperadas e foram recuperadas. 
+   51  == Verificar espaÃ§os alocados
+   55  ==Criar Lista Circular 1
+   58  ==Criar Lista Circular 2
+   61  ==Criar Lista Circular 3
+   64  ==Criar Lista Circular 4
+   67  ==Criar Lista Circular 5
+   70  == Verificar espaÃ§os alocados
+   74  == Verificar ObterValor relativo a lista vazia
+   77  == Verifica comando recuperar
+>>>    1  Linha:    78  Condicao de retorno errada ao Obter Valor. Deveria ser: 0  É: 3
+<<<    0  Linha:    79  Falha esperada foi recuperada. 
+   81  == Inserir elemento em lista vazia
+   85  == Controlar vazamento de memÃ³ria
+ll>    1  Linha:    86  Parâmetro não está definido:  CED_ExibirTodos
+>>>    2  Linha:    86  Erro nos parâmetros do comando:  =exibirtodosespacos            CED_ExibirTodos
+>>>    3  Linha:    88  Comando de teste ignorado:  =obternumeroespacosalocados    6
+   90  == Inserir elemento apÃ³s primeiro
+   94  == Inserir elemento antes do Ãºltimo
+   98  == Excluir elemento do meio
+  102  == Buscar elemento que nÃ£o existe
+  105  == Excluir elemento do inÃ­cio
+  109  == Excluir elemento final, Ãºnico
+  113  == Ver se a lista ficou vazia
+  116  == Destruir a lista
+  119  == Destruir a lista
+  122  == Destruir a lista
+  125  == Controlar vazamento de memÃ³ria
+ll>    4  Linha:   127  Parâmetro não está definido:  CED_ExibirTodos
+>>>    5  Linha:   127  Erro nos parâmetros do comando:  =verificartodosespacos       CED_ExibirTodos
+  129  == Criar uma lista com dois elementos
+  134  == Esvaziar a lista e ver se ficou vazia
+  139  == Destruir a lista
+  142  == Criar uma lista com quatro elementos
+  149  == Verificar a lista de trÃ¡s para diante
+  159  == Verificar a lista de frente para trÃ¡s
+  169  == Destruir a lista
+  172  == Terminar controlar contadores
+cc>    6  Linha:   174   Contagem em "CriaElemento_if0" é zero.
+cc>    7  Linha:   174   Contagem em "LST_AvancarElementoCorrente_if0" é zero.
+cc>    8  Linha:   174   Contagem em "LST_BuscaElemento_pr1" é zero.
+cc>    9  Linha:   174   Contagem em "LST_BuscaElemento_while_fim" é zero.
+cc>   10  Linha:   174   Contagem em "LST_CriaLista_if0" é zero.
+cc>   11  Linha:   174   Contagem em "LST_InsereElemDireita_if0" é zero.
+cc>   12  Linha:   174   Contagem em "LST_InsereElemEsquerda_if0" é zero.
+cc>   13  Linha:   174   Contagem em "LST_ObterValor_pr0" é zero.
+cc>   14  Linha:   174   Contagem em "LST_ObterValor_pr1" é zero.
+cc>   15  Linha:   174   Contagem em "LST_RemoveElemento_if0" é zero.
+cc>   16  Linha:   174   Contagem em "LST_VerificarCabeca" é zero.
+cc>   17  Linha:   174   Contagem em "LST_VerificarCabeca_if0" é zero.
+cc>   18  Linha:   174   Contagem em "LST_VerificarCabeca_if1" é zero.
+cc>   19  Linha:   174   Contagem em "LST_VerificarCabeca_if2" é zero.
+cc>   20  Linha:   174   Contagem em "LST_VerificarCabeca_if3" é zero.
+cc>   21  Linha:   174   Contagem em "LST_VerificarCabeca_if4" é zero.
+cc>   22  Linha:   174   Contagem em "LST_VerificarCabeca_pr0" é zero.
+cc>   23  Linha:   174   Contagem em "LST_VerificarCabeca_pr1" é zero.
+cc>   24  Linha:   174   Contagem em "LST_VerificarCabeca_pr2" é zero.
+cc>   25  Linha:   174   Contagem em "LST_VerificarCabeca_pr3" é zero.
+cc>   26  Linha:   174   Contagem em "LST_VerificarElem" é zero.
+cc>   27  Linha:   174   Contagem em "LST_VerificarElem_if0" é zero.
+cc>   28  Linha:   174   Contagem em "LST_VerificarElem_if1" é zero.
+cc>   29  Linha:   174   Contagem em "LST_VerificarElem_if2" é zero.
+cc>   30  Linha:   174   Contagem em "LST_VerificarElem_if3" é zero.
+cc>   31  Linha:   174   Contagem em "LST_VerificarElem_if4" é zero.
+cc>   32  Linha:   174   Contagem em "LST_VerificarElem_if5" é zero.
+cc>   33  Linha:   174   Contagem em "LST_VerificarElem_if6" é zero.
+cc>   34  Linha:   174   Contagem em "LST_VerificarElem_pr0" é zero.
+cc>   35  Linha:   174   Contagem em "LST_VerificarElem_pr1" é zero.
+cc>   36  Linha:   174   Contagem em "LST_VerificarElem_pr2" é zero.
+cc>   37  Linha:   174   Contagem em "LST_VerificarElem_pr3" é zero.
+cc>   38  Linha:   174   Contagem em "LST_VerificarElem_pr4" é zero.
+cc>   39  Linha:   174   Contagem em "LST_VerificarLista" é zero.
+cc>   40  Linha:   174   Contagem em "LST_VerificarLista_if0" é zero.
+cc>   41  Linha:   174   Contagem em "LST_VerificarLista_pr0" é zero.
+cc>   42  Linha:   174   Contagem em "LST_VerificarLista_pr1" é zero.
+cc>   43  Linha:   174   Contagem em "LiberarElemento_EXCECAO" é zero.
+cc>   44  Linha:   174   Contagem em "LiberarElemento_if0" é zero.
+  176  == Terminar contagem
+!!!   44  Linha:   179  // 
+!!!   44  Linha:   180  //        FIM DO SCRIPT DE TESTE 
+!!!   44  Linha:   181  // 
+
+!!! Número de linhas lidas:         181
+!!! Número de casos de teste:        35
+!!! Número comandos corretos:        91
+!!! Número de falhas encontradas:    44
+
+!!! Foram encontrados problemas
+
+
+!!! Numero de espacos ainda alocados: 44
