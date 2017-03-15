@@ -1,0 +1,141 @@
+// Script:    TesteContador-LCirc.script
+// Autor:     Daniel Cunha Rios
+// Data:      10/dez/2016
+// Propósito: Testar arquivo de script para controle de cobertura
+//
+
+== Inicializar valores
+=declararparm   lista0  int 0
+=declararparm   lista1  int 1
+=declararparm   lista2  int 2
+
+=declararparm    elem0    string  "jorge"
+=declararparm    elem1    string  "rodrigo"
+=declararparm    elem2    string  "lucas"
+=declararparm    elem3    string  "daniel"
+
+=declararparm    valor0   string  "jorge"
+=declararparm    valor1   string  "rodrigo"
+=declararparm    valor2   string  "lucas"
+=declararparm    valor3   string  "daniel"
+=declararparm    valor4   string  "papito"
+
+=declararparm    num0     int -1
+=declararparm    num1     int  1
+=declararparm    num2     int  10
+=declararparm    num3     int -10
+
+=declararparm   OK             int 0
+=declararparm   NaoEncontrou   int 1
+=declararparm   MemoriaCheia   int 2
+=declararparm   Vazia          int 3  
+
+== Iniciar contagem
+=inicializarcontadores  "acumulador"
+=lercontadores          "LCIRC"
+=zerartodoscontadores
+=iniciarcontagem
+
+==Criar Lista Circular 0
+=criarlistac     lista0   OK
+
+== Verificar contadores, 1 já contou
+=verificarcontagens    85
+=contagemcontador   "LST_CriaLista"  1
+=AceitaFalhasAcumuladas 85
+
+== Verificar ObterValor relativo a lista vazia
+=obtervalor      lista0   valor2   Vazia
+
+== Verifica comando recuperar
+=obtervalor      lista0   valor2   OK
+=recuperar
+
+== Inserir elemento em lista vazia
+=inserirelementoesq    lista0   valor0   OK
+=buscarelemento        lista0   valor0   OK
+
+== Inserir elemento após primeiro
+=inserirelementodir     lista0   valor1   OK
+=buscarelemento         lista0   valor1   OK
+
+== Inserir elemento antes do último
+=inserirelementoesq    lista0   valor2   OK
+=buscarelemento        lista0   valor2   OK
+
+== Excluir elemento do meio
+=buscarelemento     lista0   valor2   	 OK
+=removeelemento     lista0   elem2       OK
+
+== Buscar elemento que não existe
+=buscarelemento     lista0   valor4    	OK
+
+== Excluir elemento do início
+=buscarelemento  lista0   valor0     OK
+=removeelemento  lista0   elem0      OK
+
+== Excluir elemento final, único 
+=buscarelemento  lista0   valor1      OK
+=removeelemento     lista0   elem1       OK
+
+== Ver se a lista ficou vazia
+=buscarelemento  lista0   valor1     Vazia
+
+== Destruir a lista
+=destruirlista   lista0   OK
+
+== Criar uma lista com dois elementos
+=criarlistac            lista1   OK
+=inserirelementodir     lista1   valor0   OK
+=inserirelementodir     lista1   valor1   OK
+
+== Esvaziar a lista e ver se ficou vazia
+=esvaziarlista   lista1   OK
+=buscarelemento  lista1   valor1   Vazia
+=esvaziarlista   lista1   Vazia
+
+== Destruir a lista
+=destruirlista   lista1   OK
+
+== Criar uma lista com quatro elementos
+=criarlistac            lista2   OK
+=inserirelementodir     lista2   valor0   OK
+=inserirelementodir     lista2   valor1   OK
+=inserirelementodir     lista2   valor2   OK
+=inserirelementodir     lista2   valor3   OK
+
+== Verificar a lista de trás para diante
+=buscarelemento              lista2    valor3   OK
+=avancarelementocorrente     lista2     num0    OK
+=buscarelemento              lista2    valor2   OK
+=avancarelementocorrente     lista2     num0    OK
+=buscarelemento              lista2    valor1   OK
+=avancarelementocorrente     lista2     num0    OK
+=buscarelemento              lista2    valor0   OK
+=avancarelementocorrente     lista2     num0    OK
+
+== Verificar a lista de frente para trás
+=buscarelemento              lista2    valor0   OK
+=avancarelementocorrente     lista2     num1    OK
+=buscarelemento              lista2    valor1   OK
+=avancarelementocorrente     lista2     num1    OK
+=buscarelemento              lista2    valor2   OK
+=avancarelementocorrente     lista2     num1    OK
+=buscarelemento              lista2    valor3   OK
+=avancarelementocorrente     lista2     num1    OK
+
+== Destruir a lista
+=destruirlista   lista2  OK
+
+== Terminar controlar contadores
+=pararcontagem
+=verificarcontagens    39
+
+== Registrar acumulador
+=registraracumulador "acumulador"
+
+== Terminar contagem
+=terminarcontadores
+
+
+// fim
