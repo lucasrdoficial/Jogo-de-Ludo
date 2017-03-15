@@ -1,0 +1,143 @@
+GERADOR DE SCRIPT DE DIRETIVAS PARA MAKE
+   LES / Informática / PUC-Rio    Versão 6.00 (c) 2005
+
+Composição do construto: TesteLista.comp
+
+   Nome do Construto:           TesteLista
+   Diretório base:              C:\Users\c1512920\Desktop\Ludo\Jogo-Ludo-Testes\TRAB4-1
+
+   Arquivo composição:          TesteLista.comp
+   Arquivo plataforma:          gmake.parm
+
+   Arquivo diretivas MAKE:      TesteLista.make
+   Arquivo diretivas LINK:      TesteLista.build
+   Arquivo listagem:            TesteLista.list
+
+Módulos do construto: TesteLista.comp
+
+   testlis.c
+   lista.c
+
+Estatísticas do construto
+
+   Estatísticas do arquivo: generico.h
+      Total linhas:             588
+      Linhas de código:          54
+      Linhas de comentário:     470
+      Linhas em branco:          64
+   Arquivos de inclusão de que necessita
+      tst_espc.h
+   Arquivos em que é incluído
+      testlis.c
+
+   Estatísticas do arquivo: lerparm.h
+      Total linhas:             463
+      Linhas de código:          36
+      Linhas de comentário:     362
+      Linhas em branco:          65
+   Arquivos em que é incluído
+      testlis.c
+
+   Estatísticas do arquivo: lista.c
+      Total linhas:             585
+      Linhas de código:         312
+      Linhas de comentário:     130
+      Linhas em branco:         161
+   Arquivos de inclusão de que necessita
+      lista.h
+
+   Estatísticas do arquivo: lista.h
+      Total linhas:             357
+      Linhas de código:          35
+      Linhas de comentário:     272
+      Linhas em branco:          50
+   Arquivos em que é incluído
+      lista.c
+      testlis.c
+
+   Estatísticas do arquivo: testlis.c
+      Total linhas:             417
+      Linhas de código:         230
+      Linhas de comentário:      77
+      Linhas em branco:         124
+   Arquivos de inclusão de que necessita
+      generico.h
+      lerparm.h
+      lista.h
+      tst_espc.h
+
+   Estatísticas do arquivo: tst_espc.h
+      Total linhas:             320
+      Linhas de código:          23
+      Linhas de comentário:     277
+      Linhas em branco:          20
+   Arquivos em que é incluído
+      generico.h
+      testlis.c
+
+Totais por tipo de arquivo
+
+  Tipo: inc      Path: .
+         Total linhas do tipo:         0
+         Linhas de código:             0
+         Linhas de comentário:         0
+         Linhas em branco:             0
+         Arquivos deste tipo:          0
+
+  Tipo: tab      Path: .
+         Total linhas do tipo:         0
+         Linhas de código:             0
+         Linhas de comentário:         0
+         Linhas em branco:             0
+         Arquivos deste tipo:          0
+
+  Tipo: def      Path: .
+         Total linhas do tipo:         0
+         Linhas de código:             0
+         Linhas de comentário:         0
+         Linhas em branco:             0
+         Arquivos deste tipo:          0
+
+  Tipo: h        Path: ./FONTES
+         Total linhas do tipo:      1728
+         Linhas de código:           148
+         Linhas de comentário:      1381
+         Linhas em branco:           199
+         Arquivos deste tipo:          4
+
+  Tipo: obj      Path: .
+         Total linhas do tipo:         0
+         Linhas de código:             0
+         Linhas de comentário:         0
+         Linhas em branco:             0
+         Arquivos deste tipo:          0
+
+  Tipo: err      Path: .
+         Total linhas do tipo:         0
+         Linhas de código:             0
+         Linhas de comentário:         0
+         Linhas em branco:             0
+         Arquivos deste tipo:          0
+
+  Tipo: DEFAULT  Path: .
+         Total linhas do tipo:         0
+         Linhas de código:             0
+         Linhas de comentário:         0
+         Linhas em branco:             0
+         Arquivos deste tipo:          0
+
+  Tipo: c        Path: ./FONTES
+         Total linhas do tipo:      1002
+         Linhas de código:           542
+         Linhas de comentário:       207
+         Linhas em branco:           285
+         Arquivos deste tipo:          2
+
+Totais para todo o construto TesteLista
+
+   Total linhas:              2730
+   Linhas de código:           690
+   Linhas de comentário:      1588
+   Linhas em branco:           484
+   Arquivos processados:         6
+

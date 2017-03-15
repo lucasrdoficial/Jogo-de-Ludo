@@ -1,0 +1,27 @@
+# Teste do módulo: generico
+
+[Diretorios]
+
+Nome        =  TesteLista
+PathDefault =  .
+err         =  .
+obj         =  .
+c           =  ./FONTES
+h           =  ./FONTES
+def         =  .
+tab         =  .
+inc         =  .
+
+[Modulos]
+TESTLIS
+LISTA
+
+[BuildInicio]
+/OUT:TRAB4-1.exe
+/INCREMENTAL:NO
+/MACHINE:IX86
+
+[BuildFim]
+ArcaboucoTeste.lib
+
+[Fim]
