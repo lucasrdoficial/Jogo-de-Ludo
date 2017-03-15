@@ -1,0 +1,6 @@
+/OUT:TRAB4-3.exe
+/INCREMENTAL:NO
+/MACHINE:IX86
+testpec.obj  pecas.obj  
+ArcaboucoTeste.lib
+
