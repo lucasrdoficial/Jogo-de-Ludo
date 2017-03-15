@@ -1,0 +1,27 @@
+# Teste do módulo: generico
+
+[Diretorios]
+
+Nome        =  TesteListaCDebug
+PathDefault =  .
+err         =  .
+obj         =  .
+c           =  .
+h           =  .
+def         =  .
+tab         =  .
+inc         =  .
+
+[Modulos]
+TESTCIR /D_DEBUG
+LCIRC   /D_DEBUG
+
+[BuildInicio]
+/OUT:TRAB4-2Debug.exe
+/INCREMENTAL:NO
+/MACHINE:IX86
+
+[BuildFim]
+ArcaboucoTeste.lib
+
+[Fim]
