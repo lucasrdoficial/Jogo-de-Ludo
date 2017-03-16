@@ -1,0 +1,95 @@
+***********************************************************************
+******************     Relatorio de Trabalho      *********************
+***********************************************************************
+
+INF1301
+Nome: Rodrigo Villardi Cortezi
+Matricula: 1511425
+Curso: Ciência da Computação
+Disciplina: Programacao Modular
+Professor: Alessandro Garcia
+Email: rodrigovcortezi@gmail.com
+
+***********************************************************************
+****************     Expecificacao de Relatorio     *******************
+***********************************************************************
+
+Esse relatorio é referente ao trabalho 4-1/4-2/4-3/4-4/4-5 que tem 
+como objetivo a correção dos módulos: lista circular, peça, tabuleiro
+e lista e a implementação do módulo Jogo que representará a ligação entre
+os demais módulos para serem utilizados em um Jogo de Ludo.
+
+***********************************************************************
+*****************  Informacoes sobre horas trabalhadas ****************
+***********************************************************************
+Modelo : Data / Horas_Trabalhas / Tipo_Tarefa / Descricao_Da_Tarefa 
+
+*18/11/2016
+*6 horas trabalhadas
+*Revisar código do módulo
+*Correção de bugs observados no T2.
+
+*19/11/2016
+*5 horas trabalhadas
+*Revisar script de teste / Corrigir problemas
+*Revisando e corrigindo erros.
+
+*20/11/2016
+*8 horas trabalhadas
+*Corrigir documentação
+*Corrigir de acordo com o que foi apontado pelo T2, os documentos de
+especificação de requisitos e modelo físico.
+
+*25/11/2016
+*4 horas trabalhadas
+*Estudar / Projetar / Codificar módulo
+*Estudar como será feito a ligação entre os módulos, e iniciar a codifi-
+cação do módulo Jogo.
+
+*26/11/2016
+*6 horas trabalhadas
+*Projetar / Codificar módulo
+*Continuar codificação do módulo Jogo e desenvolver a função TAB_DesenhaTabuleiro
+que será acrescentada no módulo Tabuleiro
+
+*02/12/2016
+*4 horas trabalhadas
+*Revisar Especificações
+*Inclusão de redundâncias no modelo fisico.
+
+*03/12/2016
+*7 horas trabalhadas
+*Estudar / Codificar módulo
+*Estudando e inserindo assertivas, exceções e tradadores para as mesmas
+no módulo lista circular.
+
+*04/12/2016
+*3 horas trabalhadas
+*Estudar / Redigir Script de teste / Codificar modulo
+*Inserindo funções deturpadoras e novos casos de teste para testar o uso
+dos modulos CESPDIN e CONTA.
+
+*09/12/2016
+*5 horas trabalhadas
+*Revisar script de teste / Realizar testes
+*Revisando casos de teste e funções de deturpação implementadas e 
+realizando os testes.
+
+*10/12/2016
+*2 horas trabalhadas
+*Diagnosticar e corrigir os problemas encontrados
+*Corrigir problemas encontrados após realizar testes.
+
+*16/12/2016
+*9 horas trabalhadas
+*Estudar / Projetar
+*Implementar critério de cobertura de arestas.
+
+*17/12/2016
+*8 horas trabalhadas
+*Revisar projetos / Finalização
+*Revisando todos os módulos e finalizar trabalho para entrega.
+
+**********************************************************************
+*************************       FIM       ****************************
+**********************************************************************
