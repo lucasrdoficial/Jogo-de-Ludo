@@ -1,0 +1,41 @@
+============================================================================
+TRABALHO 4 - JOGO DE LUDO - EXCECOES E TRATADORES ("RECUPERACAO POR AVANCO")
+============================================================================
+
+<<<<<<<<<<<<<<<<<<<<      INF1301-TRAB04-LRDCRC    >>>>>>>>>>>>>>>>>>>>>>>
+
+Desenvolvido por:
+
+- Lucas Rodrigues - 1510848
+- Daniel Cunha Rios - 1512920
+- Rodrigo V. Cortezi - 1511425
+
+
+Esse arquivo de texto descreve o conteúdo de testes do módulo LISTACIRCULAR
+a modo de especificar as excecoes e tratadores usados para juntamnete com
+a estrutura redundante recuperar por avanco.
+
+----- EXCECAO -----
+
+
+Descricao -> Nosso modulo Lista Circular está implementado visando tratar a
+             excecao de que caso perca a referência da cabeca da lista dur-
+             ante o processamento de qualquer operacao, temos em cada elemento
+             um ponteiro para a cabeça da lista.
+
+
+Tratador por avanco -> Por exemplo, caso a função LiberarElemento seja chamada
+                       e seja descoberto que o ponteiro referente à lista rece-
+                       bido como parâmetro é igual a NULL, automáticamente,
+                       através das estruturas redundantes é possível se recuperar
+                       deste problema.
+
+Como foi feito -> Foi feita a inclusão de uma estrutura redundante em cada elemento
+                  da lista circular que aponta para a cabeça da Lista, ao verificar
+                  que o ponteiro pLista é NULL, podemos automaticamante fazer a 
+                  atribuição pLista = pElem->pCabeca ; E assim recuperamos a possivel
+                  perda da informação da cabeça da lista.
+
+============================================================================
+-----------------------------FIM DO DOCUMENTO-------------------------------
+============================================================================
