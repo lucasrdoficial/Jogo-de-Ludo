@@ -1,0 +1,6 @@
+/OUT:JOGO.exe
+/INCREMENTAL:NO
+/MACHINE:IX86
+lista.obj  lcirc.obj  pecas.obj  tabuleiro.obj  jogo.obj  
+ArcaboucoTeste.lib
+
