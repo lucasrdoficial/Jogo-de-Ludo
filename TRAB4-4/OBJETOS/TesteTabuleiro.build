@@ -1,0 +1,6 @@
+/OUT:TRAB4-4.exe
+/INCREMENTAL:NO
+/MACHINE:IX86
+lista.obj  lcirc.obj  pecas.obj  testtab.obj  tabuleiro.obj  
+ArcaboucoTeste.lib
+
