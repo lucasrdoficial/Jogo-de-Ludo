@@ -1,0 +1,29 @@
+# Teste do módulo: generico
+
+[Diretorios]
+
+Nome        =  JOGO
+PathDefault =  .
+err         =  .
+obj         =  .
+c           =  .
+h           =  .
+def         =  .
+tab         =  .
+inc         =  .
+[Modulos]
+LISTA
+LCIRC
+PECAS
+TABULEIRO
+JOGO
+
+[BuildInicio]
+/OUT:JOGO.exe
+/INCREMENTAL:NO
+/MACHINE:IX86
+
+[BuildFim]
+ArcaboucoTeste.lib
+
+[Fim]
