@@ -1,0 +1,135 @@
+// Script:    TesteTabuleiro.script      
+// Autor:     Daniel Cunha Rios          
+// Data:      08/out/2016                
+// Propósito: Testar o módulo tabuleiro  
+
+
+== Inicializar valores
+=declararparm   tab0    int 0
+=declararparm   tab1    int 1
+=declararparm   tab2    int 2
+
+
+=declararparm   indp0   int 0
+=declararparm   indp4   int 4
+=declararparm   indp5   int 5
+=declararparm   indp6   int 6
+=declararparm   indp7   int 7
+=declararparm   indp8   int 8
+=declararparm   indp9   int 9
+=declararparm   indp10  int 10
+=declararparm   indp11  int 11
+=declararparm   indp12  int 12
+=declararparm   indp15  int 15
+=declararparm   indp20  int 20
+
+=declararparm   qtd0   int 1
+=declararparm   qtd1   int 6
+=declararparm   qtd2   int -2
+=declararparm   qtd3   int 15
+=declararparm   qtd4   int 51
+=declararparm   qtd5   int 5
+
+=declararparm   cor0   int 0
+=declararparm   cor1   int 1
+=declararparm   cor2   int 2
+=declararparm   cor3   int 3
+=declararparm   cor4   int 4
+
+=declararparm   int0    int 0
+=declararparm   int1    int 1
+=declararparm   int2    int 2
+=declararparm   int3    int 3
+=declararparm   int4    int 4
+=declararparm   int57   int 57
+
+=declararparm   OK              int  0
+=declararparm   FaltouMemoria   int  1
+=declararparm   PecaNaoExiste   int  2
+=declararparm   PecaMorta       int  3
+=declararparm   NaoEncontrou    int  4
+=declararparm   CorInvalida     int  5
+=declararparm   FimTabuleiro    int  6
+
+
+== Criar tabuleiro corretamente
+=criartab   tab0 OK
+
+== Insere peças corretamente
+=inserepecacasa tab0 indp0 OK
+=inserepecacasa tab0 indp4 OK
+=inserepecacasa tab0 indp5 OK
+
+== Exibe tabuleiro corretamente
+=exibetabuleiro  tab0 indp5 int2 OK
+
+== Retira peças corretamente
+=retirapecacasa tab0 indp0 OK
+=retirapecacasa tab0 indp4 OK
+
+== Procurar peça corretamente
+=inserepecacasa tab0 indp0  OK
+=inserepecacasa tab0 indp4  OK
+=inserepecacasa tab0 indp6  OK
+=inserepecacasa tab0 indp7  OK
+=inserepecacasa tab0 indp8  OK
+=inserepecacasa tab0 indp9  OK
+=inserepecacasa tab0 indp10 OK
+=procurapeca    tab0 indp0  OK
+=exibetabuleiro tab0 indp7  int2 OK
+
+== Avançar casa corretamente
+=lancardado OK
+==avancacasa tab0  cor1  int3  OK
+=exibetabuleiro   tab0  indp9 int2 OK
+
+== Obter peça casa corretamente
+=obterpecacasa   tab0   indp4  OK
+=obterpecacasa   tab0   indp9  OK
+=obterpecacasa   tab0   indp10 OK
+
+== Ir para inicio da cor corretamente
+=iriniciocor  tab0  cor0 OK
+=iriniciocor  tab0  cor3 OK
+
+== Verifica casa final corretamente
+=ehcasafinal  tab0  OK
+
+== Destruir tabuleiro corretamente
+=destruirtab   tab0   OK
+
+
+
+
+
+
+== Testes com erro
+
+== Procurar peca com erro
+=criartab    tab1 OK
+=procurapeca tab1 indp0 PecaMorta
+
+== Avançar casa com erro
+=avancacasa tab1 cor4 int1  CorInvalida
+=avancacasa tab1 cor0 int57 OK
+=avancacasa tab1 cor0 int1  FimTabuleiro
+
+== Insere peça com erro
+=inserepecacasa tab0 indp0 MovInvalido
+=inserepecacasa tab0 indp5 MovInvalido
+
+== Retirar peca com erro
+=retirapecacasa tab1 indp0  PecaMorta
+
+== Ir inicio cor com erro
+=iriniciocor tab1 cor4
+
+== Destruir tabuleiro sem erro
+=destruirtab tab1 OK
+
+
+//
+//                                        
+//        FIM DO SCRIPT DE TESTE          
+//                                        
+//

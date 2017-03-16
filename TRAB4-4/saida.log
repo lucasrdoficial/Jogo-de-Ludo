@@ -1,0 +1,55 @@
+
+!!! Inicio dos testes
+!!!      Construto sob teste: TRAB4-4
+!!!      Script de teste:     TesteTabuleiro.script
+
+!!!    0  Linha:     1  // Script:    TesteTabuleiro.script 
+!!!    0  Linha:     2  // Autor:     Daniel Cunha Rios 
+!!!    0  Linha:     3  // Data:      08/out/2016 
+!!!    0  Linha:     4  // PropÃ³sito: Testar o mÃ³dulo tabuleiro 
+    7  == Inicializar valores
+   55  == Criar tabuleiro corretamente
+   58  == Insere peÃ§as corretamente
+   63  == Exibe tabuleiro corretamente
+>>>    1  Linha:    64  Comando não conhecido:  =exibetabuleiro  tab0 indp5 int2 OK
+   66  == Retira peÃ§as corretamente
+>>>    2  Linha:    67  Retorno errado ao Retirar peÃ§a casa Deveria ser: 0  É: 3
+>>>    3  Linha:    68  Não é comando recuperar:  =retirapecacasa tab0 indp4 OK
+   70  == Procurar peÃ§a corretamente
+>>>    4  Linha:    78  Retorno errado ao procurar peÃ§a Deveria ser: 0  É: 3
+>>>    5  Linha:    79  Não é comando recuperar:  =exibetabuleiro tab0 indp7  int2 OK
+   81  == AvanÃ§ar casa corretamente
+   83  ==avancacasa tab0  cor1  int3  OK
+>>>    6  Linha:    84  Comando não conhecido:  =exibetabuleiro   tab0  indp9 int2 OK
+   86  == Obter peÃ§a casa corretamente
+   91  == Ir para inicio da cor corretamente
+   95  == Verifica casa final corretamente
+   98  == Destruir tabuleiro corretamente
+  106  == Testes com erro
+>>>    7  Linha:   108  O caso de teste anterior está vazio. 
+  108  == Procurar peca com erro
+  112  == AvanÃ§ar casa com erro
+>>>    8  Linha:   114  Retorno errado ao AvanÃ§ar casa Deveria ser: 0  É: 6
+>>>    9  Linha:   115  Não é comando recuperar:  =avancacasa tab1 cor0 int1  FimTabuleiro
+  117  == Insere peÃ§a com erro
+ll>   10  Linha:   118  Parâmetro não está definido:  MovInvalido
+>>>   11  Linha:   118  Erro nos parâmetros do comando:  =inserepecacasa tab0 indp0 MovInvalido
+  121  == Retirar peca com erro
+  124  == Ir inicio cor com erro
+>>>   12  Linha:   125  Erro nos parâmetros do comando:  =iriniciocor tab1 cor4
+  127  == Destruir tabuleiro sem erro
+!!!   12  Linha:   131  // 
+!!!   12  Linha:   132  // 
+!!!   12  Linha:   133  //        FIM DO SCRIPT DE TESTE 
+!!!   12  Linha:   134  // 
+!!!   12  Linha:   135  // 
+
+!!! Número de linhas lidas:         135
+!!! Número de casos de teste:        19
+!!! Número comandos corretos:        63
+!!! Número de falhas encontradas:    12
+
+!!! Foram encontrados problemas
+
+
+!!! Numero de espacos ainda alocados: 0
