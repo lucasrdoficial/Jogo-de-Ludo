@@ -1,0 +1,29 @@
+# Teste do módulo: generico
+
+[Diretorios]
+
+Nome        =  TesteTabuleiro
+PathDefault =  .
+err         =  .
+obj         =  .
+c           =  .
+h           =  .
+def         =  .
+tab         =  .
+inc         =  .
+[Modulos]
+LISTA
+LCIRC
+PECAS
+TESTTAB
+TABULEIRO
+
+[BuildInicio]
+/OUT:TRAB4-4.exe
+/INCREMENTAL:NO
+/MACHINE:IX86
+
+[BuildFim]
+ArcaboucoTeste.lib
+
+[Fim]
