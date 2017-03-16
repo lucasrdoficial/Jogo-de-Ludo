@@ -1,0 +1,86 @@
+==============================================================
+TRABALHO 4 - JOGO DE LUDO - LEIA-ME.TXT -  Arcabouço de Teste
+==============================================================
+
+Desenvolvido por:
+
+- Lucas Rodrigues - 1510848
+- Daniel Cunha Rios - 1512920
+- Rodrigo V. Cortezi - 1511425
+
+
+Esse arquivo de texto descreve o conteúdo de INF1301-TRAB04-LRDCRC a ser implementado e testado no arcabouço,
+observacao importante no final. 
+
+Utilização do programa: 
+
+1)
+
+-Entre na pasta INF1301-TRAB04-LRDCRC.
+
+	- Caso queira testar o modulo lista:
+		- Selecione a pasta TRAB4-1
+		- Todos os arquivos de extensão .lib foram renomeados para .lib.txt
+		- Todos os arquivos de extensão .bat foram renomeados para .bat.txt
+		- TRAB4-1.exe foi rebatizado para TRAB4-1.exe.txt
+		- Execute o arquivo RodaTesteLista.bat, ele irá gerar o arquivo saida.log com os resultados 
+		do teste feito atraves da execucao do TesteLista.script.
+
+	- Caso queira testar o modulo lista circular:
+		- Selecione a pasta TRAB4-2
+		- Todos os arquivos de extensão .lib foram renomeados para .lib.txt
+		- Todos os arquivos de extensão .bat foram renomeados para .bat.txt
+		- TRAB4-2.exe foi rebatizado para TRAB4-2.exe.txt
+		- TRAB4-2Debug.exe foi rebatizado para TRAB4-2Debug.exe.txt
+	    	
+	    	-Caso queira testar o Script Normal:
+
+	    		-Execute o arquivo RodaTesteListaCirc.bat, ele irá gerar o arquivo 
+	    		saida.log com os resultados do teste feito atraves da execucao do TesteListaC.script.
+
+	    	-Caso queira testar o Script Contador e Controle de Espaço:
+
+	    		-Execute o arquivo RodaTestaTudo.bat que irá executar os testes e gerar a partir dos
+	    		scripts TesteContador.script e TesteControleEspaco.script, os arquivos TesteContador.log
+	    		e TesteControleEspaco.log.
+
+	     	-Caso queira testar a o Script Deturpador:
+
+	     		-Execute o arquivo RodaTestaTudoMesmo.bat que irá executar todos os scripts do módulo,
+	     		incluindo o TesteListaDeturp.script e gerar o TesteListaDeturp.log
+
+	- Caso queira testar o modulo peca:
+	    - Selecione a pasta TRAB4-3
+	    - Todos os arquivos de extensão .lib foram renomeados para .lib.txt
+	    - Todos os arquivos de extensão .bat foram renomeados para .bat.txt
+		- TRAB4-3.exe foi rebatizado para TRAB4-3.exe.txt
+  		- Execute o arquivo RodaTestePeca.bat, ele irá gerar o arquivo saida.log com os resultados do 
+  		teste feito atraves da execucao do TestePeca.script.
+
+	- Caso queira testar o modulo tabuleiro:
+  		- Selecione a pasta TRAB4-4
+  		- Todos os arquivos de extensão .lib foram renomeados para .lib.txt
+  		- Todos os arquivos de extensão .bat foram renomeados para .bat.txt
+		- TRAB4-4.exe foi rebatizado para TRAB4-4.exe.txt
+ 	    - Execute o arquivo RodaTesteTabuleiro.bat, ele irá gerar o arquivo saida.log com os resultados
+ 	     do teste feito atraves da execucao do TesteTabuleiro.script.
+
+    - Caso queira testar o modulo jogo (aplicação do Jogo de Ludo):
+  		- Selecione a pasta TRAB4-5
+  		- Todos os arquivos de extensão .lib foram renomeados para .lib.txt
+  		- Todos os arquivos de extensão .bat foram renomeados para .bat.txt
+		- JOGO.exe foi rebatizado para JOGO.exe.txt
+ 	    - Execute o arquivo JOGO.exe, que o jogo de Ludo será inicializado.
+
+OBS: Bom, nosso grupo se dedicou bastante neste trabalho e basicamente como todos possuem UNIX, MACOS e/ou
+     Visual Studio, fizemos o trabalho inteiro baseado no Windows, porem na interface de interacao do usuario,
+     utilizamos cores nas pecas e tabuleiro, e infelizmente ao final do trabalho percebemos que o Command Line
+     do Windows não lê as cores ANSI, logo tivemos que fazer uma adaptação! Estamos enviando na pasta TRAB4-5//Fontes
+     os arquivos TABULEIRO.C E JOGO.C que fizeram parte da geração do executavel JOGO.exe portanto não possuem cor
+     na interface, e os arquivos TABULEIROCOR.C E JOGOCOR.C que não fizeram parte da geração do JOGO.exe! Se possível
+     ao testar a aplicacao do jogo, utilizar ou UNIX, ou MACOS (Terminal), ou Visual Studio, compilando e executando
+     os arquivos : JOGOCOR.c TABULEIROCOR.c LISTA.c LCIRC.c PECAS.c !! Agradecemos a atençao . . .
+
+===========================================================================
+-----------------------FIM DO ARQUIVO LEIAME.TXT---------------------------
+===========================================================================
